@@ -10,30 +10,60 @@ body {
     line-height: 1.6;
 }
 
+#showcase nav {
+    background-color: rgba(255, 255, 255, 0.05);
+    position:fixed;
+    top:0;
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    list-style:none;
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color:#FFF;
+    font-size:20px;
+    
+}
+
 #showcase {
     background-image: url(../img/pombackground.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
-    display:flex;
-    flex-direction: column; 
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding: 0 20px;
+    flex-wrap: wrap;
 }
 
+#showcase #brand {
+    font-size:40px;
+}
 #showcase h1{
     font-size: 60px;
     line-height: 1.2;
     text-shadow: 2px 3px 10px black; /* me */
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px; 
+    
 }
 
 #showcase p{
     font-size: 20px;
     text-shadow: 2px 3px 3px black; /* me */
+
 }
 
 #showcase .btn {
